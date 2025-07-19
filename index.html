@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Breakdown Buddy - Vehicle Service Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background-color: rgba(30, 61, 89, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: rgba(244, 67, 54, 0.9);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .form-section, #home, #status, #contact {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #1e3d59;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0f263e;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(51, 51, 51, 0.9);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Breakdown Buddy</h1>
+    <p>Your Trusted Vehicle Service Management System</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#request">Service Request</a>
+    <a href="#status">Service Status</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="home">
+      <h2>Welcome to Breakdown Buddy</h2>
+      <p>Breakdown Buddy is your one-stop solution for all vehicle servicing needs. Book, track and manage your vehicle repairs with ease.</p>
+    </section>
+
+    <section id="request" class="form-section">
+      <h2>Service Request Form</h2>
+      <form>
+        <label for="owner">Owner Name</label>
+        <input type="text" id="owner" placeholder="Enter your name" required>
+
+        <label for="vehicle">Vehicle Type</label>
+        <select id="vehicle" required>
+          <option value="">--Select--</option>
+          <option value="bike">2-Wheeler</option>
+          <option value="car">4-Wheeler</option>
+        </select>
+
+        <label for="model">Vehicle Model</label>
+        <input type="text" id="model" placeholder="Ex: Honda Shine" required>
+
+        <label for="reg">Registration Number</label>
+        <input type="text" id="reg" placeholder="Ex: TN-00-0000" required>
+
+        <label for="issue">Issue Description</label>
+        <textarea id="issue" rows="4" placeholder="Describe the issue..." required></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+    <section id="status">
+      <h2>Service Status</h2>
+      <p>Track your request by contacting the service provider or through SMS/Email updates (feature coming soon).</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: support@breakdownbuddy.com</p>
+      <p>Phone: +91-98765-43210</p>
+      <p>Location: Thirupathur, Tamil Nadu, India</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Breakdown Buddy. All rights reserved.
+  </footer>
+
+</body>
+</html>
